@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<script>
+    var textArray = ["Rock", "Paper", "Scissors"];
+function computerPlay (){
+    var choice = Math.floor(Math.random()* textArray.length);
+    console.log(textArray[choice]);
+    return textArray[choice];
+}
+
+function playRound(a,b){
+  if (a == b){
+    var result = "Draw!";
+  } 
+  return result;
+}
+
+const playerSelection = prompt('Rock, Paper, Scissors?');
+const computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection));
+
+</script>
