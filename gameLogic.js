@@ -35,9 +35,15 @@ function computerPlay (){
 function getPlayerChoice(choice){
     playerChoice = choice;
 }
+
+function capitalize(string){
+    return string.charAt(0).toUpperCase() + string.slice(1);
+
+}
+
 function scoreDisplay(){
-    document.getElementById('playerChoice').textContent = 'Player chose: ' +playerChoice;
-    document.getElementById('computerSelection').textContent = 'Computer chose: ' +computerSelection;
+    document.getElementById('playerChoice').textContent = 'Player chose: ' +capitalize(playerChoice);
+    document.getElementById('computerSelection').textContent = 'Computer chose: ' +capitalize(computerSelection);
     document.getElementById('playerScore').textContent = 'Player score: ' +playerScore;
     document.getElementById('computerScore').textContent = 'Computer score: ' +computerScore;
     document.getElementById('drawScore').textContent = 'Draws so far: ' +drawScore;
