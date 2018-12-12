@@ -3,5 +3,24 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8"/>
-
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors</title>
   </head>
+  <body>
+    <div class="container">
+      <h1>Rock, Paper, Scissors</h1>
+      <div class="choices">
+        <button value="rock" id="rockBtn" onclick="getPlayerChoice(value);game()">Rock</button>
+        <button value="paper" id="paperBtn" onclick="getPlayerChoice(value);game()">Paper</button>
+        <button value="scissors" id="scissorsBtn" onclick="getPlayerChoice(value);game()">Scissors</button>
+      </div>
+    </div>
+    <div class="score" id ="score">
+      <p><span id ="playerChoice"></span></p>
+      <p><span id ="computerSelection"></span></p>
+      <p><span id ="playerScore"></span></p>
+      <p><span id ="computerScore"></span></p>
+      <p><span id ="drawScore"></span></p>
+    </div>
+    <script src="gameLogic.js"></script>
+  </body>
