@@ -40,7 +40,11 @@ function capitalize(string){
     return string.charAt(0).toUpperCase() + string.slice(1);
 
 }
-
+function resetScore(){
+    playerScore = 0;
+    computerScore = 0;
+    drawScore = 0;
+}
 function scoreDisplay(){
     document.getElementById('playerChoice').textContent = 'Player chose: ' +capitalize(playerChoice);
     document.getElementById('computerSelection').textContent = 'Computer chose: ' +capitalize(computerSelection);
