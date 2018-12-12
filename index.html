@@ -8,11 +8,11 @@
   </head>
   <body>
     <div class="container">
-      <h1>Rock, Paper, Scissors</h1>
+      <h1><img src="./images/logo.png"></h1>
       <div class="choices">
-        <button value="rock" id="rockBtn" onclick="getPlayerChoice(value);game()">Rock</button>
-        <button value="paper" id="paperBtn" onclick="getPlayerChoice(value);game()">Paper</button>
-        <button value="scissors" id="scissorsBtn" onclick="getPlayerChoice(value);game()">Scissors</button>
+        <button value="rock" class ="button" id="rockBtn" onclick="getPlayerChoice(value);game()"><img src = "./images/rock.png" width="100" height ="100"></button>
+        <button value="paper" class ="button" id="paperBtn" onclick="getPlayerChoice(value);game()"><img src = "./images/paper.png" width="100" height ="100"></button>
+        <button value="scissors" class ="button" id="scissorsBtn" onclick="getPlayerChoice(value);game()"><img src = "./images/scissors.png" width="150" height ="100"></button>
       </div>
     </div>
     <div class="score" id ="score">
@@ -24,3 +24,6 @@
     </div>
     <script src="gameLogic.js"></script>
   </body>
+  <footer>
+    <p id="credits">By Valentin Lazureanu</p>
+  </footer>
